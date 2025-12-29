@@ -78,7 +78,6 @@ I specialize in cybersec. Prevention of attacks, protection of computer systems 
   <img src="iconspng/linux.png" width="5%">
   <img src="iconspng/windows11.png" width="5%">
   <img src="iconspng/figma.png" width="5%">
-  <img src="iconspng/canva.png" width="5%">
 </p>
 
 <br/>
