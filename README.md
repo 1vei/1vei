@@ -2,14 +2,17 @@
 ⌍About⌎
 </p>
 
-I specialize in cybersec operations, aimed to expose weaknesses and engineer resilience. Prevention of attacks, protection of computer systems and information infrastructure, creation of a full defense systems, including protection from modern AI attacks. <br> <br> Currently studying in Moscow polytechnic university for Cybersecurity and in RSSU college for Tourism. Participating in various events hosted by top universities of Moscow.
+I specialize in cybersec. Prevention of attacks, protection of computer systems and information infrastructure, creation of a full defense systems, including protection from modern AI attacks. <br> <br> Currently studying in Moscow polytechnic university for Cybersecurity, finished RSSU college for Tourism. Participating in various events hosted by top universities of Moscow. <br> <br> Have 2 years of experience writing fullstack projects like: websites for artists and art galleries, a crm platform for Dubai brokers, and have some projects of my own, along with university projects.
 
 <br>
 
 <blockquote>
-<strong>Специализируюсь кибербез операциях по выявлению слабых мест и повышения устойчивости. Предотвращение атак, защита компьютерных систем и информационной инфраструктуры, создание полной системы защиты, включая защиту от современных ИИ атак.
+<strong>Специализируюсь на кибербезопасности. Предотвращение атак, защита компьютерных систем и информационной инфраструктуры, создание полной системы защиты, включая защиту от современных ИИ атак.
 <br><br>
-Учусь в Московском политехе на 3 курсе по специальности "Информационная безопасность". Окончил колледж РГСУ по специальности "Туризм". Участвую мероприятиях, проводимых ведущими университетами Москвы.</strong>
+Учусь в Московском политехе на 3 курсе по специальности "Информационная безопасность". Окончил колледж РГСУ по специальности "Туризм". Участвую мероприятиях, проводимых ведущими университетами Москвы.
+<br> <br> 
+Имею 2 года опыта создания фуллстек приложений, таких как: вебсайты для художников и художественных галерей, crm платформа для дубайских брокеров и несколько своих проектов, а также проекты в университете.
+</strong>
 </blockquote>
 
 <br>
@@ -40,10 +43,10 @@ I specialize in cybersec operations, aimed to expose weaknesses and engineer res
 </blockquote>
 
 ➠ Code Development <br>
-⊹ Writing purpose-driven tools in Python, C++, JavaScript, and Bash to solve problems and break limits.
+⊹ Writing purpose-driven tools in Python, C++, and TypeScript to solve problems and break limits.
 <blockquote>
 <strong>➠ Разработка кода <br></strong>
-<strong>⊹ Написание специализированных инструментов на Python, C++, JavaScript и Bash для решения проблем и преодоления ограничений.</strong>
+<strong>⊹ Написание специализированных инструментов на Python, C++ и TypeScript для решения проблем и преодоления ограничений.</strong>
 </blockquote>
 
 <br/>
@@ -53,6 +56,9 @@ I specialize in cybersec operations, aimed to expose weaknesses and engineer res
 </p>
 
 <p <p align="center">
+  <img src="iconspng/next.svg" width="5%">
+  <img src="iconspng/nest.svg" width="5%">
+  <img src="iconspng/ts.svg" width="5%">
   <img src="iconspng/python.png" width="5%">
   <img src="iconspng/cpp.png" width="5%">
   <img src="iconspng/kali.png" width="5%">
@@ -65,19 +71,15 @@ I specialize in cybersec operations, aimed to expose weaknesses and engineer res
   <img src="iconspng/javascript-plain.png" width="5%">
   <img src="iconspng/css3.png" width="5%">
   <img src="iconspng/html.png" width="5%">
-  <img src="iconspng/bootstrap.png" width="5%">
   <img src="iconspng/word.png" width="5%">
   <img src="iconspng/powerpoint.png" width="5%">
   <img src="iconspng/excel.png" width="5%">
   <img src="iconspng/postgresql.png" width="5%">
-  <img src="iconspng/mysql.png" width="5%">
   <img src="iconspng/qt.png" width="5%">
   <img src="iconspng/linux.png" width="5%">
-  <img src="iconspng/debian.png" width="5%">
   <img src="iconspng/windows11.png" width="5%">
   <img src="iconspng/figma.png" width="5%">
   <img src="iconspng/canva.png" width="5%">
-  <img src="iconspng/arduino.png" width="5%">
 </p>
 
 <br/>
@@ -87,6 +89,5 @@ I specialize in cybersec operations, aimed to expose weaknesses and engineer res
 </p>
 
 <blockquote>
-<strong>⊹ 	email: igumnov.hack@gmail.com <br></strong>
-<strong>⊹ 	tg: @igumn0v <br></strong>
+<strong>⊹ 	tg: @id_vei <br></strong>
 </blockquote>
