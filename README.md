@@ -68,7 +68,6 @@ I specialize in cybersec. Prevention of attacks, protection of computer systems 
   <img src="iconspng/git.png" width="5%">
   <img src="iconspng/bash.png" width="5%">
   <img src="iconspng/powershell.png" width="5%">
-  <img src="iconspng/javascript-plain.png" width="5%">
   <img src="iconspng/css3.png" width="5%">
   <img src="iconspng/html.png" width="5%">
   <img src="iconspng/word.png" width="5%">
