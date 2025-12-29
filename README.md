@@ -87,5 +87,5 @@ I specialize in cybersec. Prevention of attacks, protection of computer systems 
 </p>
 
 <blockquote>
-<strong>⊹ 	tg: @id_vei <br></strong>
+<strong>⊹ 	tg: @nqxy1 <br></strong>
 </blockquote>
