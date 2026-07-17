@@ -57,8 +57,9 @@ Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and 
 <br>
 <br>
 
----
----
+<p align="center">
+⊹   ⊹   ⊹
+</p>
 
 <br>
 <br>
