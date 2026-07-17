@@ -13,12 +13,14 @@ Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and 
 ⌍ Core Initiatives ⌎
 </p>
 
-*   **Igumnov Quantum Computer Security Suite**
+*   **Igumnov Quantum Computer Security Suite** (In Development)
     *   Low-level security runtime engineered to monitor quantum simulation and execution layers.
     *   *Stack:* Rust, eBPF, `liboqs`, Tauri v2, SolidJS, MCP.
-*   **PQCanary**
+*   **PQCanary** (In Development)
     *   An automated static analysis pipeline and formal verification tool targeting post-quantum implementations.
     *   *Stack:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
+*   **Scholar Exchange for Quantum Security (SEQS)**
+    *   A global, highly structured collaborative ecosystem and community dedicated to academic exchange in post-quantum defence and security of quantum computers.
 
 ---
 
@@ -82,6 +84,8 @@ Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and 
 *   **PQCanary**
     *   Инструмент статического анализа и формальной верификации корректности постквантовых алгоритмов.
     *   *Стек:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
+*   **Scholar Exchange for Quantum Security (SEQS)**
+    *   Сообщество для академического обмена в области постквантовой защиты и безопасности квантовых компьютеров.
 
 ---
 
