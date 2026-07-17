@@ -23,7 +23,7 @@ Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and 
 ---
 
 <p align="center">
-⌍ Technical Matrix ⌎
+⌍ Technical Skills ⌎
 </p>
 
 ```text
