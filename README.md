@@ -1,91 +1,108 @@
-<p <p align="center">
-⌍About⌎
+<p align="center">
+⌍ Overview ⌎
 </p>
 
-I specialize in cybersec. Prevention of attacks, protection of computer systems and information infrastructure, creation of a full defense systems, including protection from modern AI attacks. <br> <br> Currently studying in Moscow polytechnic university for Cybersecurity, finished RSSU college for Tourism. Participating in various events hosted by top universities of Moscow. <br> <br> Have 2 years of experience writing fullstack projects like: websites for artists and art galleries, a crm platform for Dubai brokers, and have some projects of my own, along with university projects.
+Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and hardened defense architectures. Developing automated binary analysis tooling and kernel-level monitoring systems to protect infrastructure from next-generation threats. 
+
+*   **Education:** B.S. in Information Security at Moscow Polytechnic University (Expected 2027); Tourism Degree from College of RSSU (2025).
+*   **Core Research:** Active contributor to Moscow university-level elite quantum initiatives and competitive hacking frameworks.
+
+---
+
+<p align="center">
+⌍ Core Initiatives ⌎
+</p>
+
+*   **Igumnov Quantum Computer Security Suite**
+    *   Low-level security runtime engineered to monitor quantum simulation and execution layers.
+    *   *Stack:* Rust, eBPF, `liboqs`, Tauri v2, SolidJS, MCP.
+*   **PQCanary**
+    *   An automated static analysis pipeline and formal verification tool targeting post-quantum implementations.
+    *   *Stack:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
+
+---
+
+<p align="center">
+⌍ Technical Matrix ⌎
+</p>
+
+```text
+┌── Languages ───────────► Python • C/C++ • Rust • TypeScript • JavaScript • SQL (Postgres) • Assembly (QASM, x86)
+├── Frameworks & Web ────► Next.js • NestJS • SolidJS • React • Node.js • FastAPI • Flask • JUnit • WebSockets
+├── Quantum & AI Tools ──► Qiskit • PennyLane (QML) • Cirq • Q# • TensorFlow Quantum • PyTorch • OpenQL • Z3 SMT
+├── Cybersecurity & Net ─► liboqs (Open Quantum Safe) • Wireshark • Nmap • Metasploit • IAM / Zero Trust • SIEM • eBPF
+└── Dev Tools & Engines ─► Linux (Kali/Ubuntu) • Git • Docker • Jupyter • Kubernetes • AWS • GCP • NumPy • SciPy
+```
+
+---
+
+<p align="center">
+⌍ Validation & Milestones ⌎
+</p>
+
+*   **IBM Qiskit Quantum Excellence Awards** | 2020, 2021
+*   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)**
+*   **Lomonosov MSU Championship** | Laureate & Quantum Fellowship Alumnus
+
+---
+
+<p align="center">
+⌍ Connect ⌎
+</p>
+
+*   **All Social Media:** [@iqumnov]
 
 <br>
-
-<blockquote>
-<strong>Специализируюсь на кибербезопасности. Предотвращение атак, защита компьютерных систем и информационной инфраструктуры, создание полной системы защиты, включая защиту от современных ИИ атак.
-<br><br>
-Учусь в Московском политехе на 3 курсе по специальности "Информационная безопасность". Окончил колледж РГСУ по специальности "Туризм". Участвую мероприятиях, проводимых ведущими университетами Москвы.
-<br> <br> 
-Имею 2 года опыта создания фуллстек приложений, таких как: вебсайты для художников и художественных галерей, crm платформа для дубайских брокеров и несколько своих проектов, а также проекты в университете.
-</strong>
-</blockquote>
-
 <br>
 
-<p <p align="center">
-⌍Areas⌎
+---
+---
+
+<br>
+<br>
+
+<p align="center">
+⌍ Обзор ⌎
 </p>
 
-➠ Vulnerability Analysis & Exploitation <br/>
-⊹ 	Pinpointing security flaws with precision, whether in software, networks, or human systems.
-<blockquote>
-<strong>➠ Анализ уязвимостей и их использование <br></strong>
-<strong>⊹ 	Выявление недостатков в системе безопасности, будь то в программном обеспечении, сетях или человеческих системах.</strong>
-</blockquote>
+Специализируюсь на **постквантовой криптографии (PQC)**, безопасности низкоуровневых систем и разработке защищенных архитектур. Разрабатываю инструменты автоматического статического анализа кода и системы мониторинга на уровне ядра для защиты инфраструктуры от угроз нового поколения.
 
-➠ Incident Response & Threat Hunting <br>
-⊹ 	Neutralizing active threats and building AI frameworks to detect and stop them faster.
-<blockquote>
-<strong>➠ Реагирование на инциденты и поиск угроз <br></strong>
-<strong>⊹ 	Нейтрализация активных угроз и создание ИИ систем для их более быстрого обнаружения и пресечения.</strong>
-</blockquote>
+*   **Образование:** НИУ Московский Политехнический Университет, "Информационная безопасность" (2023–2027); Колледж РГСУ, "Туризм" (2021–2025).
+*   **Исследования:** Участник квантовых хакатонов и профильных мероприятий ведущих вузов Москвы.
 
-➠ System Hardening <br>
-⊹  Architecting defense systems for network and servers
-<blockquote>
-<strong>➠ Укрепление и защита системы <br></strong>
-<strong>⊹  Создание системы защиты для сети и серверов</strong>
-</blockquote>
+---
 
-➠ Code Development <br>
-⊹ Writing purpose-driven tools in Python, C++, and TypeScript to solve problems and break limits.
-<blockquote>
-<strong>➠ Разработка кода <br></strong>
-<strong>⊹ Написание специализированных инструментов на Python, C++ и TypeScript для решения проблем и преодоления ограничений.</strong>
-</blockquote>
-
-<br/>
-
-<p <p align="center">
-⌍Hard Skills⌎
+<p align="center">
+⌍ Проекты ⌎
 </p>
 
-<p <p align="center">
-  <img src="iconspng/next.svg" width="5%">
-  <img src="iconspng/nest.svg" width="5%">
-  <img src="iconspng/ts.svg" width="5%">
-  <img src="iconspng/python.png" width="5%">
-  <img src="iconspng/cpp.png" width="5%">
-  <img src="iconspng/kali.png" width="5%">
-  <img src="iconspng/wireshark.png" width="5%">
-  <img src="iconspng/docker.png" width="5%">
-  <img src="iconspng/cisco-packet-tracer.png" width="5%">
-  <img src="iconspng/git.png" width="5%">
-  <img src="iconspng/bash.png" width="5%">
-  <img src="iconspng/powershell.png" width="5%">
-  <img src="iconspng/css3.png" width="5%">
-  <img src="iconspng/html.png" width="5%">
-  <img src="iconspng/word.png" width="5%">
-  <img src="iconspng/powerpoint.png" width="5%">
-  <img src="iconspng/excel.png" width="5%">
-  <img src="iconspng/postgresql.png" width="5%">
-  <img src="iconspng/qt.png" width="5%">
-  <img src="iconspng/linux.png" width="5%">
-  <img src="iconspng/windows11.png" width="5%">
-  <img src="iconspng/figma.png" width="5%">
+*   **Igumnov Quantum Computer Security Suite**
+    *   Низкоуровневый комплекс безопасности для мониторинга сред выполнения квантовых симуляций.
+    *   *Стек:* Rust, eBPF, `liboqs`, Tauri v2, SolidJS, MCP.
+*   **PQCanary**
+    *   Инструмент статического анализа и формальной верификации корректности постквантовых алгоритмов.
+    *   *Стек:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
+
+---
+
+<p align="center">
+⌍ Навыки ⌎
 </p>
 
-<br/>
+```text
+┌── Языки ───────────────► Python • C/C++ • Rust • TypeScript • JavaScript • SQL (Postgres) • Assembly (QASM, x86)
+├── Фреймворки и Web ────► Next.js • NestJS • SolidJS • React • Node.js • FastAPI • Flask • JUnit • WebSockets
+├── Кванты и ИИ ─────────► Qiskit • PennyLane (QML) • Cirq • Q# • TensorFlow Quantum • PyTorch • OpenQL • Z3 SMT
+├── Безопасность и Сети ─► liboqs (Open Quantum Safe) • Wireshark • Nmap • Metasploit • IAM / Zero Trust • SIEM • eBPF
+└── Инструменты и СУБД ──► Linux (Kali/Ubuntu) • Git • Docker • Jupyter • Kubernetes • AWS • GCP • NumPy • SciPy
+```
 
-<p <p align="center">
-⌍Connect⌎
+---
+
+<p align="center">
+⌍ Сертификаты и Достижения ⌎
 </p>
 
-<blockquote>
-<strong>⊹ 	tg: @nqxy1 <br></strong>
-</blockquote>
+*   **IBM Qiskit Quantum Excellence Awards** | 2020, 2021
+*   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)**
+*   **Олимпиада Ломоносов МГУ** | Лауреат и выпускник Quantum Fellowship
