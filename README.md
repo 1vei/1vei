@@ -2,7 +2,7 @@
 ⌍ Overview ⌎
 </p>
 
-Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and hardened defense architectures. Developing automated binary analysis tooling and kernel-level monitoring systems to protect infrastructure from next-generation threats. 
+Focused on **Quantum Cybersecurity**, low-level systems security, and hardened defense architectures. Developing automated binary analysis tooling and kernel-level monitoring systems to protect infrastructure from next-generation threats. 
 
 *   **Education:** B.S. in Information Security at Moscow Polytechnic University (Expected 2027); Tourism Degree from College of RSSU (2025).
 *   **Core Research:** Active contributor to Moscow university-level elite quantum initiatives and competitive hacking frameworks.
@@ -59,7 +59,7 @@ Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and 
 <br>
 
 <p align="center">
-⊹   ⊹   ⊹   ⊹   ⊹
+⊹       ⊹       ⊹
 </p>
 
 <br>
@@ -70,7 +70,7 @@ Focused on **Post-Quantum Cryptography (PQC)**, low-level systems security, and 
 ⌍ Обзор ⌎
 </p>
 
-Специализируюсь на **постквантовой криптографии (PQC)**, безопасности низкоуровневых систем и разработке защищенных архитектур. Разрабатываю инструменты автоматического статического анализа кода и системы мониторинга на уровне ядра для защиты инфраструктуры от угроз нового поколения.
+Специализируюсь на **квантовой кибербезопасности**, безопасности низкоуровневых систем и разработке защищенных архитектур. Разрабатываю инструменты автоматического статического анализа кода и системы мониторинга на уровне ядра для защиты инфраструктуры от угроз нового поколения.
 
 *   **Образование:** НИУ Московский Политехнический Университет, "Информационная безопасность" (2023–2027); Колледж РГСУ, "Туризм" (2021–2025).
 *   **Исследования:** Участник квантовых хакатонов и профильных мероприятий ведущих вузов Москвы.
