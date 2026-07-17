@@ -113,3 +113,11 @@
 *   **IBM Qiskit Quantum Excellence Awards** | 2020, 2021
 *   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)**
 *   **Олимпиада Ломоносов МГУ** | Лауреат и выпускник Quantum Fellowship
+
+---
+
+<p align="center">
+⌍ Связаться ⌎
+</p>
+
+*   **Все социальные сети:** [@iqumnov]
