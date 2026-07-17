@@ -42,9 +42,12 @@
 ⌍ Validation & Milestones ⌎
 </p>
 
-*   **IBM Qiskit Quantum Excellence Awards** | 2020, 2021
-*   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)**
-*   **Lomonosov MSU Championship** | Laureate & Quantum Fellowship Alumnus
+*   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)** | ID: 8017284
+*   **IBM Qiskit Quantum Excellence Awards** | 2020 & 2021 (Global Summer School)
+*   **Lomonosov MSU Case-Championship Winner** | Medical Analytical Platform (Healthy Technologies)
+*   **Womanium Global Quantum Computing Program** | Hardware Certificate (MIT, IBM, Princeton Partnership)
+*   **QHack Coding Challenges Certificate** | PennyLane / Xanadu
+*   **QWorld QSilver Diploma** | Complex Numbers & Shor’s Algorithm | No: QSilver2-50
 
 ---
 
@@ -70,7 +73,7 @@
 ⌍ Обзор ⌎
 </p>
 
-Специализируюсь на **квантовой кибербезопасности**, безопасности низкоуровневых систем и разработке защищенных архитектур. Разрабатываю инструменты автоматического статического анализа кода и системы мониторинга на уровне ядра для защиты инфраструктуры от угроз нового поколения.
+**Квантовой кибербезопасность**, безопасность низкоуровневых систем и разработка защищенных архитектур. Разрабатываю инструменты автоматического статического анализа кода и системы мониторинга на уровне ядра для защиты инфраструктуры от угроз нового поколения.
 
 *   **Образование:** НИУ Московский Политехнический Университет, "Информационная безопасность" (2023–2027); Колледж РГСУ, "Туризм" (2021–2025).
 *   **Исследования:** Участник квантовых хакатонов и профильных мероприятий ведущих вузов Москвы.
@@ -110,9 +113,12 @@
 ⌍ Сертификаты и Достижения ⌎
 </p>
 
-*   **IBM Qiskit Quantum Excellence Awards** | 2020, 2021
-*   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)**
-*   **Олимпиада Ломоносов МГУ** | Лауреат и выпускник Quantum Fellowship
+*   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)** | ID: 8017284
+*   **IBM Qiskit Quantum Excellence Awards** | 2020 и 2021 (Global Summer School)
+*   **Международный кейс-чемпионат МГУ** | Победитель («Медицинская аналитическая платформа»)
+*   **Womanium Global Quantum Computing Program** | Аппаратный сертификат (Hardware Certificate)
+*   **QHack Coding Challenges** | Сертификат PennyLane / Xanadu
+*   **Диплом QWorld QSilver** | Комплексные числа и алгоритм Шора | № QSilver2-50
 
 ---
 
