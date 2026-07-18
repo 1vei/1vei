@@ -20,7 +20,7 @@
     *   An automated static analysis pipeline and formal verification tool targeting post-quantum implementations.
     *   *Stack:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
 *   **Scholar Exchange for Quantum Security (SEQS)**
-    *   A global, highly structured collaborative ecosystem and community dedicated to academic exchange in post-quantum defence and security of quantum computers.
+    *   A global collaborative ecosystem and community dedicated to academic exchange in post-quantum defence and security of quantum computers.
 
 ---
 
