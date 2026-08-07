@@ -1,3 +1,25 @@
+<div align="center">
+  <a href="https://github.com/1vei">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=1vei&theme=tokyo-night" width="100%" alt="1vei's Contribution Graph" />
+  </a>
+  <br/><br/>
+  <a href="https://github.com/1vei">
+    <img src="https://streak-stats.demolab.com/?user=1vei&theme=tokyo-night" width="49%" alt="1vei Streak Stats" />
+  </a>
+  <a href="https://github.com/1vei">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=1vei&theme=2077" width="49%" alt="1vei Profile Details" />
+  </a>
+  <br/><br/>
+  <a href="https://github.com/1vei">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=1vei&theme=2077" width="49%" alt="Most Committed Languages" />
+  </a>
+  <a href="https://github.com/1vei">
+    <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=1vei&theme=2077" width="49%" alt="1vei Stats" />
+  </a>
+</div>
+
+<br/>
+
 <p align="center">
 ⌍ Overview ⌎
 </p>
