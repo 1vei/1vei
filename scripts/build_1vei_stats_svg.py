@@ -4,7 +4,6 @@ import re
 import os
 import base64
 
-# Font loading helper
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 FONT_DIR = os.path.join(SCRIPT_DIR, "fonts")
 
@@ -120,18 +119,20 @@ def draw_stats(s):
              + label(0, 50, s["total"], 52, "e-f", extra=' font-weight="600"')
              + label(0, 72, "contributions in the last year", 12) + '</g>')
     
-    for i, (val, lab) in enumerate([(f"{s['max_streak']} days", "max streak"),
-                                    (s["active"], "active days")]):
-        p.append(f'<g opacity="0">{fade(0.30 + i * 0.12)}'
-                 + label(WIDTH, 30 + i * 40, val, 19, "e-f", "end",
-                         ' font-weight="600"')
-                 + label(WIDTH, 47 + i * 40, lab, 11, "m-f", "end") + '</g>')
+    right_margin = 8
+    p.append(f'<g opacity="0">{fade(0.30)}'
+             + label(WIDTH - right_margin, 30, f"{s['max_streak']} days", 19, "e-f", "end", ' font-weight="600"')
+             + label(WIDTH - right_margin, 47, "max streak", 11, "m-f", "end") + '</g>')
+    p.append(f'<g opacity="0">{fade(0.42)}'
+             + label(WIDTH - right_margin, 70, s["active"], 19, "e-f", "end", ' font-weight="600"')
+             + label(WIDTH - right_margin, 87, "active days", 11, "m-f", "end") + '</g>')
 
     base, top = H - 10, H - 58
     span = base - top
-    step = WIDTH / max(len(weekly) - 1, 1)
+    usable_width = WIDTH - right_margin
+    step = usable_width / max(len(weekly) - 1, 1)
     pts = [(i * step, base - (v / peak) * span) for i, v in enumerate(weekly)]
-    clip, cursor = wipe("rs", 0, top - 6, WIDTH, span + 8, 0.50)
+    clip, cursor = wipe("rs", 0, top - 6, usable_width, span + 8, 0.50)
     p.append(clip)
     p.append('<g clip-path="url(#rs)">')
     p.append(f'<path d="M{pts[0][0]:.1f} {base:.1f}'
@@ -144,7 +145,7 @@ def draw_stats(s):
     p.append("</g>")
     p.append(cursor)
     ex, ey = pts[-1]
-    p.append(f'<circle cx="{ex - 2:.1f}" cy="{ey:.1f}" r="4.5" class="e-f r" '
+    p.append(f'<circle cx="{ex:.1f}" cy="{ey:.1f}" r="4.5" class="e-f r" '
              f'stroke-width="2" opacity="0">{fade(0.50 + REVEAL, 0.35)}</circle>')
     p.append("</svg>")
     return "".join(p)
@@ -155,4 +156,4 @@ if __name__ == "__main__":
     out_path = os.path.join(SCRIPT_DIR, "..", "stats.svg")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(svg_content)
-    print(f"Successfully generated {out_path} with total={s['total']}, active={s['active']}, max_streak={s['max_streak']}")
+    print(f"Successfully generated {out_path} with circle cutoff fix!")

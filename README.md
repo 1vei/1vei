@@ -1,5 +1,11 @@
 <div align="center">
-  <img src="./stats.svg" width="620" alt="Contributions in the last year"/>
+
+  <img src="./stats.svg" width="100%" alt="Contributions in the last year"/>
+
+  [instagram](https://www.instagram.com/iqumnov) &nbsp;·&nbsp;
+  [linkedin](https://www.linkedin.com/in/iqumnov) &nbsp;·&nbsp;
+  [email](mailto:iqumnov@proton.me)
+
 </div>
 
 <br/>
@@ -52,14 +58,6 @@
 *   **Womanium Global Quantum Computing Program** | Hardware Certificate (MIT, IBM, Princeton Partnership)
 *   **QHack Coding Challenges Certificate** | PennyLane / Xanadu
 *   **QWorld QSilver Diploma** | Complex Numbers & Shor’s Algorithm | No: QSilver2-50
-
----
-
-<p align="center">
-⌍ Connect ⌎
-</p>
-
-*   **All Social Media:** [@iqumnov]
 
 <br>
 <br>
@@ -121,11 +119,3 @@
 *   **Womanium Global Quantum Computing Program** | Аппаратный сертификат (Hardware Certificate)
 *   **QHack Coding Challenges** | Сертификат PennyLane / Xanadu
 *   **Диплом QWorld QSilver** | Комплексные числа и алгоритм Шора | № QSilver2-50
-
----
-
-<p align="center">
-⌍ Связаться ⌎
-</p>
-
-*   **Все социальные сети:** [@iqumnov]
