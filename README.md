@@ -11,12 +11,12 @@
 **Quantum Cybersecurity**, low-level systems security, and hardened defense architectures. Developing automated binary analysis tooling and kernel-level monitoring systems to protect infrastructure from next-generation threats. 
 
 *   **Education:** B.S. in Information Security at Moscow Polytechnic University (Expected 2027); Tourism Degree from College of RSSU (2025).
-*   **Core Research:** Active contributor to Moscow university-level elite quantum initiatives and competitive hacking frameworks.
+*   **Research:** Active contributor to Moscow university-level elite quantum initiatives and competitive hacking frameworks.
 
 ---
 
 <p align="center">
-⌍ Core Initiatives ⌎
+⌍ Initiatives ⌎
 </p>
 
 *   **Igumnov Quantum Computer Security Suite** (In Development)
@@ -43,7 +43,7 @@
 ---
 
 <p align="center">
-⌍ Validation & Milestones ⌎
+⌍ Certifications ⌎
 </p>
 
 *   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)** | ID: 8017284
