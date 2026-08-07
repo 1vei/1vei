@@ -19,8 +19,6 @@
 *   **PQCanary** (In Development)
     *   An automated static analysis pipeline and formal verification tool targeting post-quantum implementations.
     *   *Stack:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
-*   **Scholar Exchange for Quantum Security (SEQS)**
-    *   A global collaborative ecosystem and community dedicated to academic exchange in post-quantum defence and security of quantum computers.
 
 ---
 
@@ -90,8 +88,6 @@
 *   **PQCanary**
     *   Инструмент статического анализа и формальной верификации корректности постквантовых алгоритмов.
     *   *Стек:* Rust, Solid.js, WebAssembly, Z3 SMT Solver, Qiskit.
-*   **Scholar Exchange for Quantum Security (SEQS)**
-    *   Сообщество для академического обмена в области постквантовой защиты и безопасности квантовых компьютеров.
 
 ---
 
