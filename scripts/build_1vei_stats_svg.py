@@ -19,7 +19,6 @@ def font_text():
     return face("jbmono-400.woff2", 400) + face("jbmono-600.woff2", 600)
 
 WIDTH = 620
-LEFT = 34
 REVEAL = 1.30
 MONO = "JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace"
 
@@ -115,21 +114,24 @@ def draw_stats(s):
     weekly = s["weekly"] or [0]
     peak = max(weekly) or 1
     p = [head(WIDTH, H)]
-    p.append(f'<g opacity="0">{fade(0.10)}'
-             + label(0, 50, s["total"], 52, "e-f", extra=' font-weight="600"')
-             + label(0, 72, "contributions in the last year", 12) + '</g>')
     
-    right_margin = 8
-    p.append(f'<g opacity="0">{fade(0.30)}'
-             + label(WIDTH - right_margin, 30, f"{s['max_streak']} days", 19, "e-f", "end", ' font-weight="600"')
-             + label(WIDTH - right_margin, 47, "max streak", 11, "m-f", "end") + '</g>')
-    p.append(f'<g opacity="0">{fade(0.42)}'
-             + label(WIDTH - right_margin, 70, s["active"], 19, "e-f", "end", ' font-weight="600"')
-             + label(WIDTH - right_margin, 87, "active days", 11, "m-f", "end") + '</g>')
-
-    base, top = H - 10, H - 58
-    span = base - top
+    right_margin = 24
     usable_width = WIDTH - right_margin
+
+    # Reduced font sizes for refined proportion
+    p.append(f'<g opacity="0">{fade(0.10)}'
+             + label(0, 42, s["total"], 36, "e-f", extra=' font-weight="600"')
+             + label(0, 64, "contributions in the last year", 11) + '</g>')
+    
+    p.append(f'<g opacity="0">{fade(0.30)}'
+             + label(usable_width, 28, f"{s['max_streak']} days", 15, "e-f", "end", ' font-weight="600"')
+             + label(usable_width, 44, "max streak", 10, "m-f", "end") + '</g>')
+    p.append(f'<g opacity="0">{fade(0.42)}'
+             + label(usable_width, 64, s["active"], 15, "e-f", "end", ' font-weight="600"')
+             + label(usable_width, 80, "active days", 10, "m-f", "end") + '</g>')
+
+    base, top = H - 10, H - 56
+    span = base - top
     step = usable_width / max(len(weekly) - 1, 1)
     pts = [(i * step, base - (v / peak) * span) for i, v in enumerate(weekly)]
     clip, cursor = wipe("rs", 0, top - 6, usable_width, span + 8, 0.50)
@@ -156,4 +158,4 @@ if __name__ == "__main__":
     out_path = os.path.join(SCRIPT_DIR, "..", "stats.svg")
     with open(out_path, "w", encoding="utf-8") as f:
         f.write(svg_content)
-    print(f"Successfully generated {out_path} with circle cutoff fix!")
+    print(f"Successfully generated {out_path} with refined text sizing & right margin padding!")

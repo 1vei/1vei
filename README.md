@@ -2,6 +2,7 @@
 
   <img src="./stats.svg" width="100%" alt="Contributions in the last year"/>
 
+  [telegram](https://t.me/iqumnov) &nbsp;·&nbsp;
   [instagram](https://www.instagram.com/iqumnov) &nbsp;·&nbsp;
   [linkedin](https://www.linkedin.com/in/iqumnov) &nbsp;·&nbsp;
   [email](mailto:iqumnov@proton.me)
@@ -17,12 +18,12 @@
 **Quantum Cybersecurity**, low-level systems security, and hardened defense architectures. Developing automated binary analysis tooling and kernel-level monitoring systems to protect infrastructure from next-generation threats. 
 
 *   **Education:** B.S. in Information Security at Moscow Polytechnic University (Expected 2027); Tourism Degree from College of RSSU (2025).
-*   **Research:** Active contributor to Moscow university-level elite quantum initiatives and competitive hacking frameworks.
+*   **Core Research:** Active contributor to Moscow university-level elite quantum initiatives and competitive hacking frameworks.
 
 ---
 
 <p align="center">
-⌍ Initiatives ⌎
+⌍ Core Initiatives ⌎
 </p>
 
 *   **Igumnov Quantum Computer Security Suite** (In Development)
@@ -49,7 +50,7 @@
 ---
 
 <p align="center">
-⌍ Certifications ⌎
+⌍ Validation & Milestones ⌎
 </p>
 
 *   **eLearnSecurity Certified Web Penetration Tester (eWPT v1.0)** | ID: 8017284
