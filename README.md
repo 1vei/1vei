@@ -1,7 +1,17 @@
 <div align="center">
+
+  <!-- Yearly Activity Chart in B&W (No title text) -->
   <a href="https://github.com/1vei">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=1vei&theme=github-dark&hide_border=true&custom_title=Contributions%20in%20the%20last%20year" width="100%" alt="Contributions in the last year" />
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=1vei&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=222222&hide_border=true&custom_title=%20" width="100%" alt="1vei Activity Graph" />
   </a>
+
+  <br/><br/>
+
+  <!-- Total Contributions & Max Streak in B&W -->
+  <a href="https://github.com/1vei">
+    <img src="https://streak-stats.demolab.com/?user=1vei&background=000000&border=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakNum=ffffff&sideNums=ffffff&sideLabels=888888&dates=888888&hide_border=true" width="100%" alt="1vei Contributions & Max Streak" />
+  </a>
+
 </div>
 
 <br/>
