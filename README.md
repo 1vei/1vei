@@ -2,9 +2,9 @@
 
   <img src="./stats.svg" width="100%" alt="Contributions in the last year"/>
 
-  [telegram](https://t.me/iqumnov) &nbsp;·&nbsp;
   [instagram](https://www.instagram.com/iqumnov) &nbsp;·&nbsp;
   [linkedin](https://www.linkedin.com/in/iqumnov) &nbsp;·&nbsp;
+  [telegram](https://t.me/iqumnov) &nbsp;·&nbsp;
   [email](mailto:iqumnov@proton.me)
 
 </div>
