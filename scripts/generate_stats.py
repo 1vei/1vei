@@ -1,23 +1,6 @@
 #!/usr/bin/env python3
-"""Draw the profile README's stat graphics from the GitHub GraphQL API.
+"""Draw the profile README's stat graphics from the GitHub GraphQL API."""
 
-No third-party services and no dependencies — standard library only.
-
-Outputs, all sharing one visual language with ascii.svg (the portrait):
-  stats.svg   hero total + weekly sparkline
-  streak.svg  current and longest streak
-  langs.svg   top languages, by bytes and by repo count
-  year.svg    the year as a character map, in the portrait's own ramp
-
-Every file uses the portrait's grey ink, a monospace face, a transparent
-background, and the same left-to-right clipPath reveal with a cursor riding
-the edge. Motion is SMIL because GitHub strips <script> from READMEs.
-
-Env:
-  GITHUB_TOKEN  required
-  GH_LOGIN      user to summarise (default: andriidrok1)
-  OUT_DIR       where to write (default: repository root)
-"""
 import base64
 import functools
 import json
@@ -28,12 +11,6 @@ from datetime import date, datetime, timedelta, timezone
 
 API = "https://api.github.com/graphql"
 
-# Two things are pinned for determinism, both learned the hard way:
-#  * the contribution window, to whole UTC days — otherwise "the past year" is
-#    measured from request time and days drift between week buckets, moving the
-#    sparkline a fraction of a pixel and committing noise every night;
-#  * privacy: PUBLIC on repositories — otherwise a personal token sees private
-#    repos and a workflow token doesn't, so language totals disagree.
 QUERY = """
 query($login: String!, $from: DateTime!, $to: DateTime!) {
   user(login: $login) {
@@ -55,59 +32,39 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 }
 """
 
-# The portrait's ink is the data ink, so every graphic reads as one material.
 LIGHT = dict(data="#6e7681", emph="#424a53", dim="#8c959f",
              rule="#d8dee4", surface="#ffffff")
 DARK = dict(data="#c9d1d9", emph="#f0f6fc", dim="#8b949e",
             rule="#30363d", surface="#0d1117")
-# JBMono is the inlined subset below; the rest is a fallback for the unlikely
-# case a renderer ignores the embedded face.
 MONO = ("JBMono,ui-monospace,SFMono-Regular,Menlo,Consolas,"
         "&apos;Liberation Mono&apos;,monospace")
 FONT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
 
-
 @functools.lru_cache(maxsize=None)
 def face(filename, weight):
-    """One @font-face rule with the subset inlined as a data URI.
-
-    An external font URL cannot work here: these SVGs are loaded through <img>,
-    and browsers refuse to fetch subresources for an image document. Inlining is
-    also what pins the advance width — the portrait's grid assumes 0.600 em, and
-    a viewer whose default monospace is narrower would otherwise see it squeezed.
-    """
     with open(os.path.join(FONT_DIR, filename), "rb") as f:
         b64 = base64.b64encode(f.read()).decode("ascii")
     return (f"@font-face{{font-family:JBMono;font-style:normal;"
             f"font-weight:{weight};font-display:block;"
             f"src:url(data:font/woff2;base64,{b64}) format('woff2')}}")
 
-
 def font_text():
-    """Basic latin, both weights — for the data graphics."""
     return face("jbmono-400.woff2", 400) + face("jbmono-600.woff2", 600)
 
-
 def font_head():
-    """Only the letters the section headings use."""
     return face("jbmono-head.woff2", 600)
 
-WIDTH = 620            # every graphic shares one column width
-LEFT = 34              # shared left inset, so stacked blocks line up
-                       # (year.svg needs it for the weekday gutter)
-REVEAL = 1.30          # seconds; matches the portrait's cadence
-RAMP = [" ", ":", "+", "#", "@"]      # steps of the portrait's own ramp
+WIDTH = 620
+LEFT = 34
+REVEAL = 1.30
+RAMP = [" ", ":", "+", "#", "@"]
 MON = ["jan", "feb", "mar", "apr", "may", "jun",
        "jul", "aug", "sep", "oct", "nov", "dec"]
-
-
-# ---------------------------------------------------------------- data
 
 def window():
     today = datetime.now(timezone.utc).date()
     start = today - timedelta(days=364)
     return (f"{start.isoformat()}T00:00:00Z", f"{today.isoformat()}T23:59:59Z")
-
 
 def fetch(login, token):
     since, until = window()
@@ -128,18 +85,11 @@ def fetch(login, token):
         raise SystemExit(f"no such user: {login}")
     return user
 
-
 def pretty(iso):
     d = date.fromisoformat(iso)
     return f"{MON[d.month - 1]} {d.day}"
 
-
 def streaks(days):
-    """Current and longest runs of days with at least one contribution.
-
-    A zero on the final day doesn't break the current streak — the day isn't
-    over yet. Any earlier zero does.
-    """
     best = dict(length=0, start=None, end=None)
     run, run_start = 0, None
     for d in days:
@@ -161,7 +111,6 @@ def streaks(days):
         cur["end"] = cur["end"] or d["date"]
     return cur, best
 
-
 def languages(repos):
     by_size, by_repo = {}, {}
     for node in repos:
@@ -169,16 +118,14 @@ def languages(repos):
         for e in edges:
             name = e["node"]["name"]
             by_size[name] = by_size.get(name, 0) + e["size"]
-        if edges:                       # primary language of the repo
+        if edges:
             top = edges[0]["node"]["name"]
             by_repo[top] = by_repo.get(top, 0) + 1
 
     def rank(d):
-        # sort by value, then name, so equal values never reorder between runs
         return sorted(d.items(), key=lambda kv: (-kv[1], kv[0]))[:5]
 
     return rank(by_size), rank(by_repo)
-
 
 def summarise(user):
     cal = user["contributionsCollection"]["contributionCalendar"]
@@ -195,9 +142,6 @@ def summarise(user):
         current=cur, longest=best,
         by_size=by_size, by_repo=by_repo)
 
-
-# ---------------------------------------------------------------- drawing
-
 def style(extra="", font=None):
     def block(t):
         return (f".d-f{{fill:{t['data']}}}.d-s{{stroke:{t['data']}}}"
@@ -208,20 +152,16 @@ def style(extra="", font=None):
             f"@media(prefers-color-scheme:dark){{{block(DARK)}"
             f".w{{fill:{DARK['data']};opacity:.16}}}}</style>")
 
-
 def head(w, h, font=None):
     return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" '
             f'viewBox="0 0 {w} {h}" fill="none" font-family="{MONO}">'
             + style(font=font))
 
-
 def fade(delay, dur=0.45):
     return (f'<animate attributeName="opacity" from="0" to="1" '
             f'begin="{delay:.2f}s" dur="{dur}s" fill="freeze"/>')
 
-
 def wipe(cid, x, y, w, h, delay, dur=REVEAL):
-    """clipPath reveal plus the cursor block that rides its edge."""
     clip = (f'<clipPath id="{cid}"><rect x="{x}" y="{y}" height="{h}" width="0">'
             f'<animate attributeName="width" from="0" to="{w}" '
             f'begin="{delay:.2f}s" dur="{dur}s" fill="freeze"/></rect></clipPath>')
@@ -233,15 +173,12 @@ def wipe(cid, x, y, w, h, delay, dur=REVEAL):
               f'begin="{delay + dur:.2f}s"/></rect>')
     return clip, cursor
 
-
 def label(x, y, text, size=11, cls="m-f", anchor="start", extra=""):
     a = f' text-anchor="{anchor}"' if anchor != "start" else ""
     return (f'<text x="{x}" y="{y}" class="{cls}" font-size="{size}"{a}'
             f'{extra}>{text}</text>')
 
-
 def hbar(x, y, w, h, cls="d-f", r=3.0):
-    """Horizontal bar: rounded data-end on the right, square at the baseline."""
     if w <= 0.6:
         return ""
     r = min(r, h / 2.0, w)
@@ -250,9 +187,7 @@ def hbar(x, y, w, h, cls="d-f", r=3.0):
             f'V{y + h - r:.1f}Q{x + w:.1f} {y + h:.1f} {x + w - r:.1f} {y + h:.1f}'
             f'H{x:.1f}Z" class="{cls}"/>')
 
-
 def draw_stats(s):
-    """Hero number, the two secondary counts, and the weekly sparkline."""
     H = 148
     weekly = s["weekly"] or [0]
     peak = max(weekly) or 1
@@ -289,9 +224,7 @@ def draw_stats(s):
     p.append("</svg>")
     return "".join(p)
 
-
 def draw_streak(s):
-    """Current and longest streak, split by a hairline."""
     H = 96
     cells = []
     for k, lab in (("current", "current streak"), ("longest", "longest streak")):
@@ -313,9 +246,7 @@ def draw_streak(s):
     p.append("</svg>")
     return "".join(p)
 
-
 def draw_langs(s):
-    """Two small charts: share of bytes, and count of repos by main language."""
     rows = max(len(s["by_size"]), len(s["by_repo"]), 1)
     H = 26 + rows * 22 + 6
     colw = (WIDTH - LEFT - 30) / 2
@@ -350,17 +281,7 @@ def draw_langs(s):
     p.append("</svg>")
     return "".join(p)
 
-
 def draw_heading(word):
-    """A section heading in the mono face, with a hairline running right.
-
-    GitHub strips <style> and style= from markdown, so a real markdown heading
-    can only ever be GitHub's own sans. Rendering the label as an SVG is the
-    only way to put the page's own typeface on it. The rule starts past the
-    longest plausible advance (0.6em is the widest common monospace ratio), so
-    a narrower font on the viewer's machine widens the gap slightly rather than
-    colliding with the text.
-    """
     FS = 16
     H = 26
     text_end = len(word) * FS * 0.6 + 18
@@ -371,9 +292,7 @@ def draw_heading(word):
     p.append("</svg>")
     return "".join(p)
 
-
 def draw_year(s):
-    """Seven rows by fifty-three weeks, intensity as a character."""
     FS, LH, COLW = 9.2, 11.0, 2
     CW = FS * 0.6
     pad_l, pad_t = LEFT, 44
@@ -395,7 +314,6 @@ def draw_year(s):
                      f"{sum(len(w) for w in weeks)} days had a contribution", 11)
              + '</g>')
 
-    # ramp legend, so the encoding is never carried by shade alone
     lx = WIDTH - 6
     p.append(f'<g opacity="0">{fade(1.30)}'
              + label(lx - 78, 32, "less", 9, "m-f", "end")
@@ -442,9 +360,6 @@ def draw_year(s):
     p.append("</svg>")
     return "".join(p)
 
-
-# ---------------------------------------------------------------- main
-
 def write(path, svg):
     old = ""
     if os.path.exists(path):
@@ -456,12 +371,12 @@ def write(path, svg):
         f.write(svg)
     return True
 
-
 def main():
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         sys.exit("GITHUB_TOKEN is not set")
-    login = os.environ.get("GH_LOGIN", "andriidrok1")
+
+    login = os.environ.get("GH_LOGIN", "Iqumnov")
     out_dir = os.environ.get("OUT_DIR", ".")
 
     s = summarise(fetch(login, token))
@@ -478,7 +393,6 @@ def main():
     print("languages by bytes: "
           + ", ".join(f"{n} {v}" for n, v in s["by_size"]))
     print("updated: " + (", ".join(sorted(changed)) if changed else "nothing"))
-
 
 if __name__ == "__main__":
     main()
